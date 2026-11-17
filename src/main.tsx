@@ -1,6 +1,7 @@
 import { createRoot } from 'react-dom/client';
-import { sample } from './dialogue';
+import '@fontsource-variable/geist';
+import '@xyflow/react/dist/style.css';
+import './style.css';
+import { App } from './App';
 
-createRoot(document.getElementById('root')!).render(
-  <main><h1>{sample.title}</h1><p>{sample.nodes[0].text}</p></main>,
-);
+createRoot(document.getElementById('root')!).render(<App />);
