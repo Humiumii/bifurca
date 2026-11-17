@@ -66,7 +66,7 @@ h1 { font-size: clamp(1.85rem, 4vw, 2.65rem); letter-spacing: -.059em; line-heig
 .section-bar svg { color: var(--muted); }
 .counts { color: var(--muted); font: .73rem ui-monospace, monospace; }
 .counts span { margin-inline: 3px; }
-.canvas { height: clamp(490px, calc(100dvh - 280px), 790px); background: #151613; }
+.canvas { height: clamp(490px, calc(100dvh - 320px), 790px); background: #151613; }
 .canvas-footer, .project-status { display: flex; align-items: center; gap: 9px; padding: 12px 15px; color: var(--muted); font-size: .79rem; }
 .canvas-footer { border-top: 1px solid var(--line); }
 .project-status { padding-inline: 2px; }
@@ -90,7 +90,7 @@ h1 { font-size: clamp(1.85rem, 4vw, 2.65rem); letter-spacing: -.059em; line-heig
 .react-flow__controls .react-flow__controls-button { width: 34px; height: 34px; min-height: 0; border: 0; border-right: 1px solid var(--line); border-radius: 0; background: var(--surface); color: #e0ded2; }
 
 .inspector { display: flex; flex-direction: column; min-width: 0; }
-.inspector-content { overflow-y: auto; max-height: calc(clamp(490px, calc(100dvh - 280px), 790px) + 41px); }
+.inspector-content { overflow-y: auto; max-height: calc(clamp(490px, calc(100dvh - 320px), 790px) + 41px); }
 .fields, .reply-section, .inspector-actions { padding: 16px 15px; }
 .fields { display: grid; gap: 13px; }
 label { display: grid; gap: 6px; font-size: .8rem; font-weight: 580; }
