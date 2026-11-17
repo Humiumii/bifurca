@@ -119,3 +119,20 @@ textarea { resize: vertical; min-height: 75px; line-height: 1.45; }
   button { transition: none; }
 }
 
+
+.preview { width: min(520px, calc(100% - 28px)); max-height: calc(100dvh - 32px); padding: 0; border: 1px solid #545044; border-radius: 12px; background: var(--surface); color: inherit; }
+.preview:modal { overscroll-behavior: contain; }
+.preview::backdrop { overflow: hidden; overscroll-behavior: contain; background: #11120ed9; }
+.preview .section-bar { min-height: 56px; }
+.preview .section-bar button { min-height: 32px; width: 32px; }
+.preview-content { padding: 25px; }
+.preview-meta, .preview-meta strong { display: flex; align-items: center; gap: 8px; }
+.preview-meta { justify-content: space-between; color: var(--accent); }
+.preview-meta span { color: var(--muted); font: .75rem ui-monospace, monospace; }
+.preview-line { margin: 13px 0 22px; font-size: 1.32rem; line-height: 1.45; white-space: pre-wrap; overflow-wrap: anywhere; }
+.preview-choices { display: grid; gap: 7px; }
+.preview-choices button { padding-block: 8px; justify-content: space-between; text-align: left; gap: 14px; overflow-wrap: anywhere; }
+.preview-choices svg { color: var(--accent); flex-shrink: 0; }
+.preview-choices small { white-space: nowrap; }
+.ending { display: flex; align-items: center; gap: 8px; margin: 0; color: var(--accent); font-size: .86rem; }
+.preview-footer { padding: 12px 15px; border-top: 1px solid var(--line); display: flex; justify-content: end; }

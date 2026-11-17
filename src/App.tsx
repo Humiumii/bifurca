@@ -3,6 +3,7 @@ import { CircleAlert, CircleCheck, GitFork, Plus } from 'lucide-react';
 import type { Connection, XYPosition } from '@xyflow/react';
 import { Canvas } from './Canvas';
 import { Inspector } from './Inspector';
+import { Preview } from './Preview';
 import { connectReply, removeNode, sample, updateNode, type DialogueNode } from './dialogue';
 
 const samplePositions = {
@@ -64,6 +65,7 @@ export function App() {
         <header className="project-header">
           <div><p className="eyebrow">DIÁLOGO DE EJEMPLO</p><h1>{dialogue.title}</h1></div>
           <div className="project-actions">
+            <Preview dialogue={dialogue} />
             <button className="primary" onClick={addNode}><Plus size={17} /> Nuevo nodo</button>
           </div>
         </header>
